@@ -38,4 +38,4 @@ Bảng trên ghi theo lịch sử commit hiện có. Phần test của Minh chư
 | Thành viên | Báo cáo | Tình trạng |
 | --- | --- | --- |
 | Nguyễn Hữu An | [2A202604024_NguyenHuuAn.md](report/team/2A202604024_NguyenHuuAn.md) | Đã điền nội dung và minh chứng |
-| Triệu Tuấn Minh | [2A202604123_TrieuTuanMinh.md](report/team/2A202604123_TrieuTuanMinh.md) | Bản sao nguyên mẫu, chưa điền nội dung |
+| Triệu Tuấn Minh | [2A202604123_TrieuTuanMinh.md](report/team/2A202604123_TrieuTuanMinh.md) | Bản sao nguyên mẫu, Đã điền nội dung |
