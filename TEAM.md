@@ -11,8 +11,8 @@
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
+|   1 | Triệu Tuấn Minh | 2A202604123 | trieutuanminh004@gmail.com | ttm4623 |         |
+|   2 | Nguyễn Hữu An | 2A2026     |       |        |         |
 
 Gợi ý chia vai:
 
