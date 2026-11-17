@@ -32,7 +32,9 @@ Em giữ quote đầy đủ khi gọi host để tránh trừ khoản đã hoàn
 
 Bộ mặc định đạt **79 passed**, student đạt **248 passed**; `python -m pytest -q -o addopts=` đạt **327 passed**. [Benchmark](../../src/reports/benchmark.json) ghi nhận workflow 70/70 trial, pass^5=1, variance=0 và cost/success 27,857143 VND mô phỏng. Run ID `R-workflow-C-014-s11` minh họa trường hợp hoàn phần chênh. [Crash suite](../../src/reports/crash.json) đạt 20/20 cho host/swarm; ba shape nhóm viết được kiểm bằng test riêng.
 
-Trong [R2](research_card.md), [report ablation](../../src/reports/research_ablation.json) cho thấy swarm 69/70 → order-only 70/70 trial pass. Cặp run ID `R-swarm-C-002-s55` và `R-swarm_order_only-C-002-s55` là minh chứng trực tiếp. Kết quả sinh lại của benchmark, crash và ablation khớp các JSON đã lưu; lệnh tái lập được ghi trong [ADR](decision_adr.md) và research card.
+Em tự kiểm ba shape trên 40 claim không nhãn × 5 seed trong `student_drop/`. [Report tự kiểm](../../src/reports/hidden_selfcheck.json) ghi nhận 200 trial/shape, không có lỗi chạy hoặc trace và không có `leak_suspect`; chưa tính được pass rate.
+
+Trong [R2](research_card.md), [report ablation](../../src/reports/research_ablation.json) cho thấy swarm 69/70 → order-only 70/70 trial pass. Cặp run ID `R-swarm-C-002-s55` và `R-swarm_order_only-C-002-s55` là minh chứng trực tiếp. Bốn report benchmark, crash, R2 và tự kiểm không nhãn sinh lại khớp JSON đã lưu; các lệnh được ghi tại [hướng dẫn tái lập](../../src/reports/README.md).
 
 ## 5. Công cụ AI đã dùng
 
@@ -42,4 +44,4 @@ Em sử dụng **Codex** để hỗ trợ đọc yêu cầu, rà code, viết te
 
 Phần việc của em đáp ứng các tình huống public đã kiểm, đặc biệt là quote đầy đủ, retry/crash và ranh giới tool/trace. Qua kết quả benchmark, em chọn workflow vì xử lý đúng task hiện tại với cost/success thấp nhất.
 
-Giới hạn là mới đo trên 14 claim và MockLLM; chưa có kết quả hidden, counter leak/bypass hoặc latency thực tế. R2 sửa một nhánh lỗi cố ý trên dữ liệu đã biết. Hướng cải thiện của em là kiểm chứng trên corpus mới trước khi kết luận khả năng tổng quát.
+Giới hạn là độ đúng mới được chấm trên 14 claim public với MockLLM; 40 claim tự kiểm chưa có nhãn. Em chưa có kết quả chấm hidden, counter leak/bypass hoặc latency thực tế. R2 sửa một nhánh lỗi cố ý trên dữ liệu đã biết. Hướng cải thiện của em là kiểm chứng với nhãn chuẩn trên corpus mới trước khi kết luận khả năng tổng quát.

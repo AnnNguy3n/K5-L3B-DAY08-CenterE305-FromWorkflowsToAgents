@@ -32,7 +32,7 @@ Bảng trên ghi theo lịch sử commit hiện có. Phần test của Minh chư
 - [Báo cáo nhóm](report/team/group_report.md).
 - [Quyết định kiến trúc](report/team/decision_adr.md): chọn workflow theo kết quả public.
 - [Research card R2](report/team/research_card.md): phân tích lỗi kiểm chứng dữ kiện của swarm và ablation order-only.
-- [Benchmark bốn shape](src/reports/benchmark.json), [crash suite](src/reports/crash.json), [report R2](src/reports/research_ablation.json).
+- [Benchmark bốn shape](src/reports/benchmark.json), [crash suite](src/reports/crash.json), [report R2](src/reports/research_ablation.json), [tự kiểm không nhãn](src/reports/hidden_selfcheck.json).
 
 ## Cá nhân
 

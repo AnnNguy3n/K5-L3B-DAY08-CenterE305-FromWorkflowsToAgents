@@ -42,9 +42,11 @@ Nhóm chọn **workflow** vì đạt cùng độ đúng public với single/orch
 
 [Crash suite](../../src/reports/crash.json) đạt **20/20**, kiểm host và một kịch bản swarm; ba shape nhóm viết có test crash riêng nêu ở mục 3. Bộ test mặc định đạt **79 passed**, student đạt **248 passed**, tổng **327 passed**. Ma trận student kiểm lỗi swarm C-002/seed 55 như một lỗi đã biết; vì vậy test xanh vẫn phù hợp với benchmark swarm 69/70.
 
+Nhóm tự kiểm thêm 40 claim không nhãn trong `student_drop/` với cùng năm seed. [Hidden self-check](../../src/reports/hidden_selfcheck.json) ghi nhận mỗi shape workflow/single/orchestrator chạy đủ 200 trial, không có lỗi chạy, trace đúng contract và `leak_suspect_trials=0`. Bộ tự kiểm không tính được pass rate hay xác nhận các counter must-pass của grader.
+
 Trong **R2**, nhóm giữ nguyên topology và điều kiện benchmark, chỉ tắt việc dùng parsed delay từ ticket để ghi đè order. [Report ablation](../../src/reports/research_ablation.json) ghi nhận swarm 69/70 → order-only 70/70 trial pass; cost/success 49,566957 → 48,715714 VND mô phỏng. Cặp `R-swarm-C-002-s55` và `R-swarm_order_only-C-002-s55` chuyển từ quote 20.000đ/`resolved` sang 0đ/`denied`; cả hai vẫn có ba model call. Nhóm phân loại đây là lỗi kiểm chứng dữ kiện theo MAST; phương pháp và phân tích ở [research card](research_card.md).
 
-Lệnh benchmark/crash được ghi tại [hướng dẫn tái lập](../../src/reports/README.md), lệnh R2 tại research card. Ba report sinh lại khớp JSON đã lưu; nhóm không sửa tay số liệu. Trace được tái tạo tại `src/traces/<run_id>.json` và không commit.
+Lệnh benchmark, crash, R2 và tự kiểm không nhãn được ghi tại [hướng dẫn tái lập](../../src/reports/README.md). Bốn report sinh lại khớp JSON đã lưu; nhóm không sửa tay số liệu. Trace được tái tạo tại `src/traces/<run_id>.json` và không commit.
 
 ## 5. Khó khăn và cách xử lý
 
@@ -63,9 +65,9 @@ Bằng chứng chi tiết ở [TEAM.md](../../TEAM.md) và [báo cáo cá nhân 
 
 ## 7. Hạn chế và hướng cải thiện
 
-Kết quả chỉ phản ánh 14 claim public với MockLLM. Cost là mô phỏng, latency là `unavailable`; chênh lệch prompt, tool call và cách ghi trace chưa cho phép tách riêng tác động của topology. R2 xử lý một lỗi được cài có chủ đích trên dữ liệu đã quan sát, nên chưa chứng minh mức cải thiện trên dữ liệu mới.
+Độ đúng chỉ được chấm trên 14 claim public với MockLLM; 40 claim tự kiểm chưa có nhãn. Cost là mô phỏng, latency là `unavailable`; chênh lệch prompt, tool call và cách ghi trace chưa cho phép tách riêng tác động của topology. R2 xử lý một lỗi được cài có chủ đích trên dữ liệu đã quan sát, nên chưa chứng minh mức cải thiện trên dữ liệu mới.
 
-Nhóm chưa có kết quả hidden để xác nhận ngưỡng pass rate ≥ 0,75 trên 200 trial và các counter approval bypass, secret/PII leak. Hướng tiếp theo là đánh giá trên corpus mới và giữ riêng dữ liệu phát hiện lỗi với dữ liệu kiểm chứng.
+Nhóm chưa có kết quả chấm hidden để xác nhận ngưỡng pass rate ≥ 0,75 trên 200 trial và các counter approval bypass, secret/PII leak. Hướng tiếp theo là đánh giá với nhãn chuẩn và giữ riêng dữ liệu phát hiện lỗi với dữ liệu kiểm chứng.
 
 ## 8. Tài liệu tham khảo
 

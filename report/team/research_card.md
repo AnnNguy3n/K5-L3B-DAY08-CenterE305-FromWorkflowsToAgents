@@ -1,19 +1,8 @@
 # Research card
 
-File này nằm cố định ở `report/team/research_card.md`; `python -m lab8.check_submission` đọc cột "Nhóm điền" bằng máy.
-
-Phần này nối tiếp phần mini research ở buổi lý thuyết (slide 62–63). Nhóm chọn **R2**, điền đủ 7 field và chạy **một ablation**: giữ nguyên model (MockLLM), bộ tool, seed, corpus và giá, chỉ thay đổi việc sử dụng parsed delay từ ticket để ghi đè dữ liệu order. Đây là thí nghiệm thuộc bài chính C6.
-
-| Câu | Nguồn (thư viện tham khảo, slide 68–69) | Câu hỏi gợi ý cho lab |
-| --- | --- | --- |
-| R1 · Scaling | Google Research 2026, *Towards a Science of Scaling Agent Systems* | Task claims chủ yếu tuần tự hay song song được? Dự đoán thêm investigator sẽ làm pass rate và cost/success thay đổi thế nào. |
-| R2 · Failure taxonomy | MAST, NeurIPS 2025, *Why Do Multi-Agent LLM Systems Fail?* | Các trial fail của swarm (seed 55) thuộc nhóm nào: lỗi giao việc, lệch mục tiêu, hay lỗi kiểm chứng? |
-| R3 · Architecture choices | AgentArch, AACL 2026 | Nếu đổi topology mà giữ nguyên mọi thứ khác, biến nào phải cố định để kết luận còn đúng? |
-| R4 · Evaluation confounders | EMNLP 2026, *Rethinking Evaluation of MAS Efficiency* | Làm sao chứng minh chênh lệch giữa A/B/C/D là do topology, không phải do prompt, tool hay seed? |
+Nhóm chọn **R2 — Failure taxonomy** và chạy một ablation: giữ nguyên MockLLM, bộ tool, seed, corpus và giá, chỉ thay đổi việc sử dụng parsed delay từ ticket để ghi đè dữ liệu order.
 
 ## Phiếu của nhóm
-
-Phiếu nghiên cứu của nhóm:
 
 | Field | Hướng dẫn | Nhóm điền |
 | --- | --- | --- |

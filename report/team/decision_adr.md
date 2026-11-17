@@ -1,6 +1,6 @@
 # Decision record
 
-Quyết định dựa trên `src/reports/benchmark.json` và `src/reports/crash.json` hiện tại. Giữ nguyên các dòng nhãn để `lab8.check_submission` và grader đọc được.
+Nhóm chọn kiến trúc dựa trên benchmark public, crash suite và kết quả tự kiểm không nhãn trong `src/reports/`.
 
 - Shape chọn: workflow
 - Commit hash: 70c00ff884e690a3427f37ae9a85b597adbe3494 (mốc mã nguồn dùng để tái lập benchmark và crash report)
@@ -59,6 +59,10 @@ python -m pytest -q tests/test_workflow.py
 ```
 
 Khi lập ADR, đã sinh lại benchmark và crash report vào thư mục tạm và đối chiếu: nội dung JSON khớp hoàn toàn hai report hiện tại, không sửa tay JSON.
+
+## Tự kiểm trên student_drop
+
+Nhóm chạy ba shape workflow, single và orchestrator trên 40 claim không nhãn với seed `11,22,33,44,55`. [hidden_selfcheck.json](../../src/reports/hidden_selfcheck.json) ghi nhận 200 trial/shape, không có lỗi chạy, trace đúng contract và `leak_suspect_trials=0`. Pass rate, pass^5 và cost/success đều chưa xác định vì không có nhãn; kết quả này không thay thế các counter must-pass hoặc điểm hidden của giảng viên. Lệnh tái lập nằm trong [hướng dẫn report](../../src/reports/README.md); dữ liệu `student_drop/` được giữ ngoài Git.
 
 ## Giới hạn
 
