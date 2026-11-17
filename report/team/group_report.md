@@ -5,7 +5,7 @@
 - Nhóm: **CenterE305**, lớp **K5 — L3B**.
 - Thành viên: Triệu Tuấn Minh — `2A202604123`; Nguyễn Hữu An — `2A202604024`.
 - Repo: [K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents](https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents), nhánh `main`.
-- Mốc mã nguồn tái lập: `70c00ff884e690a3427f37ae9a85b597adbe3494`, theo [ADR](decision_adr.md). Benchmark và crash report được lưu ở `68234fa`; thí nghiệm R2 và báo cáo CP5 ở `3868fe8`.
+- Commit mã nguồn và minh chứng dùng nộp: `cdbad20bca37355086539d0472850edb7ed38404`, thống nhất với [ADR](decision_adr.md).
 
 ## 2. Mục tiêu và cách tiếp cận
 
@@ -59,7 +59,7 @@ Lỗi swarm tại C-002/seed 55 cho thấy ticket có thể mâu thuẫn với o
 | Thành viên | Phần việc và commit |
 | --- | --- |
 | Triệu Tuấn Minh | Triển khai ban đầu single/orchestrator: `c5289c3`. |
-| Nguyễn Hữu An | Workflow, bổ sung an toàn và test: `ff0ea62`; tích hợp: `70c00ff`; benchmark/ADR: `68234fa`; R2 và báo cáo: `3868fe8`. |
+| Nguyễn Hữu An | Workflow, bổ sung an toàn và test: `ff0ea62`; tích hợp: `70c00ff`; benchmark/ADR: `68234fa`; R2: `3868fe8`; tự kiểm không nhãn và chốt báo cáo: `cdbad20`. |
 
 Bằng chứng chi tiết ở [TEAM.md](../../TEAM.md) và [báo cáo cá nhân của An](2A202604024_NguyenHuuAn.md). Báo cáo cá nhân và commit test của Minh chưa hoàn thiện, nên minh chứng C8 của nhóm còn thiếu.
 

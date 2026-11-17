@@ -16,9 +16,10 @@ Em phụ trách workflow, tích hợp ba shape, bổ sung test an toàn, chạy 
 | Commit | Nội dung |
 | --- | --- |
 | [ff0ea62](https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents/commit/ff0ea6238ecee5de3d1d29a96fc70d8366404f05) | Triển khai workflow, bổ sung an toàn cho single/orchestrator và thêm hai file test shape. |
-| [70c00ff](https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents/commit/70c00ff884e690a3427f37ae9a85b597adbe3494) | Tích hợp thay đổi của nhóm; mốc mã nguồn tái lập trong ADR. |
+| [70c00ff](https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents/commit/70c00ff884e690a3427f37ae9a85b597adbe3494) | Tích hợp thay đổi của nhóm. |
 | [68234fa](https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents/commit/68234fa950ea71a6c966139f0f971edcda85d819) | Lưu benchmark, crash report và ADR chọn workflow. |
 | [3868fe8](https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents/commit/3868fe83f0cbbd932805e2b3d39082667f10719d) | Thêm helper/test/report R2, hoàn thiện research card và báo cáo CP5. |
+| [cdbad20](https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents/commit/cdbad20bca37355086539d0472850edb7ed38404) | Thêm report tự kiểm không nhãn và chốt minh chứng, hướng dẫn tái lập. |
 
 Em giữ quote đầy đủ khi gọi host để tránh trừ khoản đã hoàn hai lần. Với C-014, proposal là 150.000đ nhưng host chỉ hoàn thêm 120.000đ. Kết quả lấy refund/audit từ ledger qua `finish()`; investigator chỉ có tool đọc và trace chỉ ghi dữ kiện đã chọn lọc.
 

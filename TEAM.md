@@ -7,9 +7,8 @@
 - Repo nhóm: `K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents`
 - URL repo: https://github.com/AnnNguy3n/K5-L3B-DAY08-CenterE305-FromWorkflowsToAgents
 - Nhánh nộp: `main`
-- Commit chốt mã nguồn ba shape: `70c00ff884e690a3427f37ae9a85b597adbe3494`, trùng mốc tái lập trong [ADR](report/team/decision_adr.md).
-- Mốc bổ sung benchmark, crash report và ADR: `68234fa950ea71a6c966139f0f971edcda85d819`.
-- Phiên bản báo cáo: báo cáo nhóm, báo cáo cá nhân và thí nghiệm R2 được bổ sung sau các mốc trên, trong đợt ghi nhận tiến độ CP5.
+- Commit chốt mã nguồn và minh chứng: `cdbad20bca37355086539d0472850edb7ed38404`, trùng mốc tái lập trong [ADR](report/team/decision_adr.md).
+- Các mốc đóng góp: tích hợp ba shape ở `70c00ff`, benchmark/crash/ADR ở `68234fa`, R2 ở `3868fe8`, tự kiểm không nhãn và chốt minh chứng ở `cdbad20`.
 
 ## Thành viên
 

@@ -3,7 +3,7 @@
 Nhóm chọn kiến trúc dựa trên benchmark public, crash suite và kết quả tự kiểm không nhãn trong `src/reports/`.
 
 - Shape chọn: workflow
-- Commit hash: 70c00ff884e690a3427f37ae9a85b597adbe3494 (mốc mã nguồn dùng để tái lập benchmark và crash report)
+- Commit hash: cdbad20bca37355086539d0472850edb7ed38404 (phiên bản mã nguồn và đầy đủ report dùng tái lập)
 - Run id dẫn chứng: R-workflow-C-001-s11 (refund hợp lệ), R-workflow-C-007-s11 (approval hết hạn), R-workflow-C-013-s11 (đơn đã hoàn đủ), R-workflow-C-014-s11 (entitlement lớn hơn khoản đã hoàn); đối chứng lỗi swarm: R-swarm-C-002-s55; nguồn: src/reports/benchmark.json, trường trials
 - Pass rate / pass^5 / seed min-max / variance: 1.0 (70/70 trial) / 1.0 (14/14 claim đúng cả 5 seed) / 1.0–1.0 / 0.0 (phương sai tổng thể của pass rate theo seed)
 - Cost per success (mô phỏng, VND): 27.857143 (làm tròn 6 chữ số thập phân; tổng cost 1950.0 / 70 trial pass, từ src/reports/benchmark.json)
@@ -71,4 +71,4 @@ Nhóm chạy ba shape workflow, single và orchestrator trên 40 claim không nh
 - Public chỉ có 14 claim và 5 seed. Pass rate/pass^5 bằng 1.0 và variance bằng 0 chỉ mô tả bộ đã chạy; chưa chứng minh đạt hidden trên 40 claim × 5 seed. Điều kiện chấm chính thức vẫn là pass rate hidden ≥ 0.75, không approval bypass, không lộ secret và crash an toàn.
 - Benchmark public chạy mỗi trial trên DB mới; trial C-011/C-012 trong benchmark không thay thế kịch bản retry/crash nhiều lần chạy. Dùng test T11/T12 và các test crash riêng để kiểm các kịch bản đó. Suite `crash.json` không chạy toàn bộ 20 điểm trên workflow.
 - Benchmark không có counter riêng cho secret leak hoặc approval bypass, và không quét stdout như một artifact. Kết quả public pass cùng test kiểm stdout hỗ trợ quyết định trong phạm vi đã kiểm; các counter hidden phải lấy từ grader chính thức. Không dùng `0` tự khai để thay bằng chứng còn thiếu.
-- Commit ở đầu file là mốc mã nguồn đã tái lập. Nếu thay đổi mã nguồn sau mốc này, cần sinh lại report và cập nhật ADR; bổ sung kết quả hidden khi có.
+- Commit ở đầu file chứa mã nguồn và các report đã tái lập. Bản cập nhật dẫn chiếu hash sau đó không thay đổi triển khai hay số liệu; nếu sửa mã nguồn, nhóm sẽ sinh lại report và cập nhật mốc này.
